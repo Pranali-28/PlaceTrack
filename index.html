@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlaceTrack - Placement Prep Tracker</title>
+  <!--styles-->
+</head>
+<body>
+  <header class="top">
+    <h1>PlaceTrack</h1>
+    <p>Placement prep, one day at a time.</p>
+  </header>
+  <main class="grid">
+    <section class="col-main">
+      <h2>Add a task</h2>
+      <form id="task-form">
+        <input id="task-title" type="text" maxlength="120" placeholder="e.g. Solve 3 binary tree problems" required>
+        <select id="task-cat" aria-label="Category">
+          <option>DSA</option><option>Aptitude</option><option>Interview</option><option>Resume &amp; projects</option>
+        </select>
+        <select id="task-pri" aria-label="Priority">
+          <option value="High">High priority</option>
+          <option value="Medium" selected>Medium priority</option>
+          <option value="Low">Low priority</option>
+        </select>
+        <input id="task-due" type="date" aria-label="Due date">
+        <button type="submit">Add task</button>
+      </form>
+
+      <h2>Your tasks</h2>
+      <div id="controls">
+        <input id="f-q" type="search" placeholder="Search tasks" aria-label="Search tasks">
+        <select id="f-cat" aria-label="Filter by category">
+          <option value="all">All categories</option><option>DSA</option><option>Aptitude</option><option>Interview</option><option>Resume &amp; projects</option>
+        </select>
+        <select id="f-status" aria-label="Filter by status">
+          <option value="all">All statuses</option><option value="pending">Pending</option><option value="done">Done</option><option value="overdue">Overdue</option>
+        </select>
+        <select id="f-sort" aria-label="Sort tasks">
+          <option value="newest">Newest first</option><option value="priority">By priority</option><option value="due">By due date</option>
+        </select>
+      </div>
+      <ul id="task-list"></ul>
+      <p id="empty" class="muted">No tasks to show. Add one above to start your streak.</p>
+    </section>
+    <aside class="col-side">
+      <section><h2>Progress</h2><div id="stats"></div></section>
+      <section><h2>Focus timer</h2><div id="timer"></div></section>
+      <section aria-label="Backup"><div id="data"></div></section>
+    </aside>
+  </main>
+  <!--scripts-->
+</body>
+</html>
