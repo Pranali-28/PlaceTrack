@@ -1,70 +1,250 @@
-# PlaceTrack - Placement Preparation Tracker
+\# PlaceTrack – Placement Preparation Tracker
 
-## 1. Introduction and objective
-(2-3 sentences in your own words: what the site does, why you chose it, what the practical demonstrates.)
 
-## 2. Technology stack
+
+\## 1. Introduction and Objective
+
+
+
+PlaceTrack is a web-based placement preparation tracker designed to help students organize their placement preparation activities and monitor their progress. It provides a simple interface for managing preparation tasks and tracking progress. This project demonstrates website development, version control using Git and GitHub, and continuous integration using Jenkins.
+
+
+
+\## 2. Technology Stack
+
+
+
 | Component | Technology |
+
 |---|---|
+
 | Frontend | HTML, CSS, JavaScript |
-| Version control | Git |
-| Remote repository | GitHub |
-| DevOps tool | Jenkins (CI pipeline) |
-| Testing | Node.js built-in test runner (`npm test`) |
-| Optional | Docker (nginx image of the built site) |
-| Environment | Windows (local) |
 
-## 3. Features
-- (list what YOU built)
+| Version Control | Git |
 
-![PlaceTrack homepage](screenshots/website-home.png)
+| Remote Repository | GitHub |
 
-*Figure 1: Homepage in the browser.*
+| DevOps Tool | Jenkins |
 
-![Task management and progress](screenshots/website-features.png)
+| Development Environment | Windows |
 
-*Figure 2: Tasks, priorities and progress tracking.*
+| Containerization | Docker (if implemented) |
 
-## 4. How to run
-1. Clone: `git clone YOUR_REPO_URL`
-2. Open `index.html` in a browser.
-3. Run the tests: `npm test`
-4. Build the deployable folder: `npm run build` (creates `dist/`)
 
-## 5. Changes made (commit history)
-| # | Change | Commit message | Commit hash |
-|---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 (CI) | | | |
 
-![Git log](screenshots/git-commits.png)
+\## 3. Website Preview
 
-## 6. Git and GitHub commands used
-(paste the commands you actually ran)
 
-GitHub repository: YOUR_REPO_URL
 
-![GitHub repository](screenshots/github-repository.png)
+The following screenshot shows the PlaceTrack website interface.
 
-## 7. Jenkins integration
-### Steps followed
-(your steps: job name, Pipeline script from SCM, repo URL, branch `main`, Script Path `Jenkinsfile`)
 
-### Pipeline explanation
-(explain each stage: Checkout, Tool versions, Validate project files, Unit tests, Build, Archive site, optional Docker image)
 
-![Jenkins pipeline configuration](screenshots/jenkins-pipeline.png)
+!\[PlaceTrack Website Interface](screenshots/stage6\_web.png)
 
-![Jenkins successful build](screenshots/jenkins-success.png)
 
-### Console output
+
+\*Figure 1: PlaceTrack website interface.\*
+
+
+
+\## 4. Features
+
+
+
+\- Placement preparation task management.
+
+\- Task priorities and progress tracking, if implemented.
+
+\- Simple and user-friendly website interface.
+
+\- Version control and project history using Git.
+
+\- Remote repository hosting using GitHub.
+
+\- Continuous integration using Jenkins.
+
+
+
+\*Note: Keep only the features that are actually implemented in your website.\*
+
+
+
+\## 5. How to Run the Website
+
+
+
+1\. Clone the GitHub repository:
+
+
+
+&#x20;  ```bash
+
+&#x20;  git clone https://github.com/Pranali-28/PlaceTrack.git
+
+&#x20;  ```
+
+
+
+2\. Open the downloaded project folder.
+
+3\. Open `index.html` in your web browser.
+
+
+
+If your project contains a configured Node.js test script, run:
+
+
+
+```bash
+
+npm test
+
 ```
-(paste the relevant console output here)
+
+
+
+If your project contains a configured build script, run:
+
+
+
+```bash
+
+npm run build
+
 ```
 
-## 8. Conclusion
+
+
+\## 6. Changes Made and Git Workflow
+
+
+
+Git was used to track changes made during website development. GitHub was used to host the project repository and maintain the project's commit history.
+
+
+
+!\[Git Commit History](screenshots/stage7\_commit.png)
+
+
+
+\*Figure 2: Git commit history showing project development.\*
+
+
+
+\### Git Commands Used
+
+
+
+The following are common Git commands used during project development. Retain only the commands that you actually ran.
+
+
+
+```bash
+
+git status
+
+git add .
+
+git commit -m "Update website"
+
+git log --oneline
+
+git push origin main
+
+```
+
+
+
+\*\*GitHub Repository:\*\*  
+
+https://github.com/Pranali-28/PlaceTrack
+
+
+
+\## 7. Jenkins Integration
+
+
+
+Jenkins was used to configure and execute a continuous integration pipeline for the project.
+
+
+
+\### Steps Followed
+
+
+
+1\. Opened Jenkins and created a Pipeline job.
+
+2\. Configured the project repository and branch, if using Pipeline from SCM.
+
+3\. Specified the `Jenkinsfile` path, if configured.
+
+4\. Executed the pipeline.
+
+5\. Checked the build status and console output.
+
+
+
+\### Jenkins Pipeline Configuration
+
+
+
+The pipeline configuration connects Jenkins to the project repository and defines how the pipeline is executed.
+
+
+
+!\[Jenkins Pipeline Configuration](screenshots/jenkins1.png)
+
+
+
+\*Figure 3: Jenkins pipeline configuration.\*
+
+
+
+\### Jenkins Build Results
+
+
+
+The build results screen shows the outcome of the Jenkins pipeline execution.
+
+
+
+!\[Jenkins Build Results](screenshots/jenkins2.png)
+
+
+
+\*Figure 4: Jenkins build results.\*
+
+
+
+\### Pipeline Explanation
+
+
+
+Explain the stages that are actually configured in your `Jenkinsfile`. Depending on your implementation, these may include:
+
+
+
+\- \*\*Checkout:\*\* Retrieves the project source code from the repository.
+
+\- \*\*Validation:\*\* Checks that required project files are present.
+
+\- \*\*Testing:\*\* Runs configured tests, if available.
+
+\- \*\*Build:\*\* Executes the configured build process, if available.
+
+\- \*\*Archive:\*\* Saves build artifacts, if configured.
+
+
+
+\## 8. Conclusion
+
+
+
+PlaceTrack demonstrates the development of a placement preparation tracking website and the application of version control and DevOps practices. Through this project, practical experience is gained in web development, Git, GitHub, and Jenkins pipeline integration.
+
+
+
+
+
